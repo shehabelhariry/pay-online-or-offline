@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Should I Pay Online</title>
+  </head>
+  <body>
+    <div>
+      <h1>Should I Pay Online</h1>
+      <form id="convertForm" class="oon__convert-form">
+        <label
+          >Conversion Taxes:
+          <select name="conversion-taxes" value="0.08">
+            <option value="0.06">6%</option>
+            <option value="0.08">8%</option>
+            <option value="0.1">10%</option>
+          </select>
+        </label>
+        <label
+          >Currency:
+          <select name="source-currency">
+            <option value="AED">United Arab Emartes Dinar (AED)</option>
+            <option value="USD">United States Dollar (USD)</option>
+          </select>
+        </label>
+        <label label-for="online-price"
+          >Online Price:
+          <input type="number" name="online-price" id="onlinePrice"
+        /></label>
+
+        <label label-for="offline-price"
+          >Gate Price:
+          <input type="number" name="offline-price" id="offlinePice"
+        /></label>
+
+        <button type="submit" id="compare">Online Or at the Gate</button>
+      </form>
+    </div>
+    <script src="./index.js" lang="javascript"></script>
+  </body>
+</html>
